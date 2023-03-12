@@ -1,0 +1,4 @@
+1. configure tailwind
+2. add body and header components - basics
+3. config website info
+4. add post components - intermediate
