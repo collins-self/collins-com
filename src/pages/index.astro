@@ -1,19 +1,35 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import MainWrapper from '../components/MainWrapper.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import PortfolioInfoCard from '../components/PortfolioInfoCard.astro';
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 </head>
-    <MainWrapper>
-        <h1 slot="top" class="font-serif text-9xl text-center text-slate-900 pt-20 ">I'm Collins</h1>
-        <h2 slot="top" class="font-serif text-5xl text-center text-slate-900 pb-3">A Developer.</h2>
-        <div slot="content" class="leading-loose font-serif ">
-            <p class="p-6 text-6xl">Lorem, ipsum dolor sit amet consectetur adipisicing eli</p>
-        </div>
-    </MainWrapper>
+    <div class="bg-gradient-to-t from-gray-100">
+        <MainWrapper>
+            <Header slot="header" title={SITE_TITLE} />
+            <h1 slot="top" class="font-serif text-9xl text-center text-slate-900 dark:text-gray-200 pt-20 ">Hi, I'm Collins</h1>
+            <h2 slot="top" class="font-serif text-5xl text-center text-slate-900 dark:text-gray-200">I'm a Developer.</h2>
+        </MainWrapper>
+        <body>
+            <PortfolioInfoCard
+            color="bg-white"
+            title="Hellow" 
+            content="Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat."/>
+            <PortfolioInfoCard
+            color="bg-white"
+            title="Hellow" 
+            content="Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat."/>
+            <div class="bg-stone-200 dark:bg-stone-600 dark:text-gray-200">
+                <Footer />
+            </div>
+        </body>
+    </div>
 </html>

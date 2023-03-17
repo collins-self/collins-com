@@ -1,25 +1,22 @@
 ---
-import Header from "./Header.astro";
-import Footer from "./Footer.astro";
-import { SITE_TITLE } from "../consts";
 ---
-<div class="bg-amber-100 min-h-screen flex items-center justify-center px-16">
-    <div class="relative w-full max-w-xl">
+<div class="bg-amber-50 dark:bg-stone-400 bg-gradient-to-t from-stone-200 dark:bg-gradient-to-t dark:from-stone-600 max-w-full pb-36 overflow-hidden flex justify-center">
+    <div class="relative">
     <!-- GRADIENTS -->
-       <div class="absolute -left-80 h-full w-full rounded-full bg-sky-200 mix-blend-multiply blur-3xl opacity-35 animate-blob" />
-       <div class="absolute top-40 h-1/2 w-full rounded-full bg-red-100 mix-blend-multiply blur-3xl opacity-35 animate-redBlob" />
-       <div class="absolute -right-80 h-full w-full rounded-full bg-green-200 mix-blend-multiply blur-3xl opacity-35 animate-blob animation-delay-4000" /> 
-       <div class="absolute -top-10 h-1/2 w-full rounded-full bg-violet-50 mix-blend-multiply blur-3xl opacity-35 animate-blob animation-delay-6000" /> 
-    <!-- CONTENT -->
+        <div class="">
+           <div class="absolute left-96 h-full w-full rounded-full bg-sky-100 mix-blend-multiply blur-3xl opacity-35 animate-blob" />
+           <div class="absolute right-96 h-full w-full rounded-full bg-green-100 mix-blend-multiply blur-3xl opacity-35 animate-blob animation-delay-4000" /> 
+           <div class="absolute left-20 top-40 h-1/2 w-full rounded-full bg-red-100 mix-blend-multiply blur-3xl opacity-35 animate-redBlob" />
+           <div class="absolute -top-10 h-1/2 w-full rounded-full bg-violet-100 mix-blend-multiply blur-3xl animate-blob animation-delay-6000" /> 
+        </div>
+<!-- CONTENT -->
        <body>
-           <div class="relative">
-                <Header title={SITE_TITLE} />
-           <slot name="top" />
-               <div class="bg-gray-50 rounded-3xl hover:translate-x-1 hover:animate-pulse">
-                    <slot name="content"/>
-               </div>
+           <div class="relative m-3">
+                <slot name="header" />
+                <div class="min-w-lg">
+                    <slot name="top"/>
+                </div>
            </div>
-           <Footer />
        </body>
     </div>
 </div>

@@ -1,13 +1,11 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import ThemeChanger from './ThemeChanger.astro';
 ---
 
 <header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
 	<nav>
+        <ThemeChanger />
 		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/blog">Blog</HeaderLink>
 		<HeaderLink href="/about">About</HeaderLink>
@@ -17,9 +15,9 @@ import { SITE_TITLE } from '../consts';
 </header>
 <style>
 	header {
-		margin: 0em 0 2em;
+		margin: 0em 0 2rem;
 	}
 	h2 {
-		margin: 0.5em 0;
+		margin: 0.5rem 0;
 	}
 </style>
