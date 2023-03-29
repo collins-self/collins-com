@@ -5,11 +5,12 @@ module.exports = {
 	theme: {
 		extend: {
             fontFamily: {
-                serif: ["'Newsreader'", 'serif'],
+                sansSerif: ["Monsterrat", 'sans-serif'], 
+                h1: ["Krona One", 'sans-serif']
             },
             animation: {
-                blob: "blob 5s infinite",
-                redBlob: "redBlob 5s infinite",
+                blob: "blob 4s infinite",
+                redBlob: "redBlob 4s infinite",
             },
             keyframes: {
                 blob: {
