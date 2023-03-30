@@ -1,4 +1,5 @@
-1. configure tailwind
-2. add body and header components - basics
-3. config website info
-4. add post components - intermediate
+dev tool svg
+<a> my passions </a>
+number of A's counter
+blog button 
+    (and blog site)

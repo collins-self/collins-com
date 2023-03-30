@@ -1,12 +1,12 @@
 root: true
-extends:
+parser: "@typescript-eslint/parser"
+extends: 
   - plugin:astro/recommended
-overrides:
+overrides: 
   - files:
-     - "*.astro"
+    - "*.astro"
     parser: astro-eslint-parser
     parserOptions:
       parser: "@typescript-eslint/parser"
-      extraFileExtensions:
+      extraFileExtensions: 
         - ".astro"
-

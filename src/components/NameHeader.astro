@@ -1,0 +1,10 @@
+---
+import Header from './Header.astro'
+import { SITE_TITLE } from '../consts'
+---
+<div class="relative m-3">
+    <Header title={SITE_TITLE} />
+    <div class="min-w-lg">
+        <slot name="top"/>
+    </div>
+</div>
