@@ -12,15 +12,17 @@ import PortfolioContent from '../components/PortfolioContent.astro';
 <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 </head>
+<body class="min-w-fit">
     <div class="bg-gradient-to-t from-gray-100">
         <MainWrapper>
             <Header slot="header" title={SITE_TITLE} />
             <h1 slot="top" class="font-h1 text-9xl text-center text-emerald-900 max-w-xl dark:text-gray-200 pt-20 ">Hi, I'm Collins</h1>
-            <h2 slot="top" class="font-h1 text-5xl text-center text-emerald-800 dark:text-gray-200">I'm a Developer.</h2>
+            <h2 slot="top" class="font-montserrat font-semibold text-5xl text-center text-emerald-700 dark:text-gray-200">I'm a Developer.</h2>
         </MainWrapper>
         <PortfolioContent />
-        <div class="bg-green-100 dark:bg-slate-600 dark:text-gray-200">
+        <div class="pt-20 bg-green-100 dark:bg-slate-600 dark:text-gray-200">
             <Footer />
         </div>
     </div>
+</body>
 </html>

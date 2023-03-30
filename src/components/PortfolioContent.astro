@@ -1,14 +1,31 @@
 ---
 import PortfolioInfoCard from './PortfolioInfoCard.astro'
+import devtools from './devtools'
+
+const baseDivClass = 'flex flex-row items-center space-x-6 max-w-3xl bg-green-100 dark:bg-slate-600 py-8'
+const baseTextClass = 'text-2xl max-w-xl font-averia text-emerald-800 dark:text-white'
+const secondaryTextClass = 'text-lg text-center max-w-xl font-montserrat text-emerald-800 dark:text-white'
 ---
-<body>
-    <div class="flex "> <!-- TODO THIS FLEX -->
+<div class="px-2 flex flex-col items-center justify-center bg-green-100 dark:bg-slate-600">
+    <div class=`${baseDivClass}`>
+        <PortfolioInfoCard {devtools} />
+        <span>
+            <span class=`${baseTextClass} text-right`>I love coding up efficient solutions to challenging problems.</span><span class=`${secondaryTextClass} text-left`> I've worked with Typescript, Java, C++, MongoDB, Next.js, and more. The site your on right now was built with Astro and Tailwindcss with some ReactJS spice</span>
+        </span>
+    </div>
+    <div class=`${baseDivClass}`>
+        <span>
+            <span class=`${baseTextClass} text-left`>I'm a student!</span><span class=`${secondaryTextClass} text-left`> Inside and outside of the classroom, I love engaging deeply with topics I find interesting.</span>
+        </span>
         <PortfolioInfoCard />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, cum non reprehenderit asperiores eveniet et excepturi fugit dolorem voluptatem facere nam vitae minus? Adipisci doloremque unde veniam ipsum ut illo.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, cum non reprehenderit asperiores eveniet et excepturi fugit dolorem voluptatem facere nam vitae minus? Adipisci doloremque unde veniam ipsum ut illo.</p>
-        <PortfolioInfoCard />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, cum non reprehenderit asperiores eveniet et excepturi fugit dolorem voluptatem facere nam vitae minus? Adipisci doloremque unde veniam ipsum ut illo.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, cum non reprehenderit asperiores eveniet et excepturi fugit dolorem voluptatem facere nam vitae minus? Adipisci doloremque unde veniam ipsum ut illo.</p>
+        <span>
+            <span class=`${baseTextClass} text-right`>Through long-form writing, hands-on building, or team-based exploration,</span><span class=`${secondaryTextClass} text-left`>  I take advantage of any chance to cultivate a deeper appreciation for my passions.</span>
+        </span>
+    </div>
+    <div class=`${baseDivClass}`>
+        <span>
+            <span class=`${baseTextClass} text-left`>Though I'm still exploring, I find I'm most drawn towards </span><span class=`${secondaryTextClass} text-left`>web development, graphics, and physics simulations (I know, a little all over the place.)</span>
+        </span>
         <PortfolioInfoCard />
     </div>
-</body>
+</div>
