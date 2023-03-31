@@ -1,5 +1,6 @@
-dev tool svg
 <a> my passions </a>
-number of A's counter
 blog button 
     (and blog site)
+fixed card size
+
+    understna dark mode implimentation and hopefully be able to load components based on dark mode
