@@ -2,9 +2,8 @@
 import PortfolioInfoCard from './PortfolioInfoCard.astro'
 import DevTools from './devtools'
 import WebPortfolioInfoCard from './WebPortfolioInfoCard.astro'
-//import WhiteACounter from './WhiteACounter'
 
-const baseDivClass = 'flex flex-row items-center space-x-6 max-w-3xl bg-green-100 dark:bg-slate-600 py-8'
+const baseDivClass = 'flex sm:flex-row flex-col items-center space-x-6 max-w-3xl bg-green-100 dark:bg-slate-600 py-8'
 const baseTextClass = 'text-2xl max-w-xl font-averia text-emerald-800 dark:text-white'
 const secondaryTextClass = 'text-lg text-center max-w-xl font-montserrat text-emerald-800 dark:text-white'
 ---
@@ -18,8 +17,9 @@ const secondaryTextClass = 'text-lg text-center max-w-xl font-montserrat text-em
         </span>
     </div>
     <div class=`${baseDivClass}`>
+        <div />
         <span>
-            <span class=`${baseTextClass} text-left`>I'm majoring in computer science and minoring in math!</span><span class=`${secondaryTextClass} text-left`> Inside and outside of the classroom, I love engaging deeply with topics I find interesting.</span>
+            <span class=`${baseTextClass} text-right`>I'm majoring in computer science and minoring in math!</span><span class=`${secondaryTextClass} text-left`> Inside and outside of the classroom, I love engaging deeply with topics I find interesting.</span>
         </span>
         <PortfolioInfoCard >
             <img src="/ACounter.svg" class="min-w-min dark:invert dark:brightness-0">
@@ -29,6 +29,7 @@ const secondaryTextClass = 'text-lg text-center max-w-xl font-montserrat text-em
         </span>
     </div>
     <div class=`${baseDivClass}`>
+        <div />
         <span>
             <span class=`${baseTextClass} text-left`>Though I'm still exploring, I find I'm most drawn towards </span><span class=`${secondaryTextClass} text-left`>web development, graphics, and physics simulations (I know, a little all over the place.)</span>
         </span>
