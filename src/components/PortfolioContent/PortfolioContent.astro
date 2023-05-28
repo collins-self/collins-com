@@ -1,0 +1,44 @@
+---
+import PortfolioInfoCard from './PortfolioInfoCard.astro'
+import DevTools from '../../../public/devtools'
+import WebPortfolioInfoCard from './WebPortfolioInfoCard.astro'
+import ACounter from '../ACounter/ACounter.astro'
+import { bgColor } from '../../consts'
+
+const baseDivClass = 'flex sm:flex-row flex-col items-center space-x-6 max-w-3xl bg-gray-50 dark:bg-slate-600 py-8'
+const baseTextClass = 'text-2xl max-w-xl font-averia text-gray-800 dark:text-white'
+const secondaryTextClass = 'text-lg text-center max-w-xl font-montserrat text-gray-800 dark:text-white'
+---
+<div class:list={["px-2 flex flex-col items-center justify-center", bgColor]}>
+    <div class:list={baseDivClass}>
+        <PortfolioInfoCard>
+            <DevTools />
+        </PortfolioInfoCard>
+        <span>
+            <span class:list={[baseTextClass, "text-right"]}>I love coding up efficient solutions to challenging problems.</span>
+            <span class:list={[secondaryTextClass, "text-left"]}> I've worked with Typescript, Java, C++, MongoDB, Next.js, and more. The site your on right now was built with Astro and Tailwindcss with some ReactJS spice</span>
+        </span>
+    </div>
+    <div class:list={baseDivClass}>
+        <div />
+        <span>
+            <span class:list={[baseTextClass, "text-right"]}>I'm majoring in computer science and minoring in math!</span>
+            <span class:list={[secondaryTextClass, "text-left"]}> Inside and outside of the classroom, I love engaging deeply with topics I find interesting.</span>
+        </span>
+        <PortfolioInfoCard >
+            <ACounter />
+        </PortfolioInfoCard>
+        <span>
+            <span class:list={[baseTextClass, "text-right"]}>Through long-form writing, hands-on building, or team-based exploration,</span>
+            <span class:list={[secondaryTextClass, "text-left"]}>  I take advantage of any chance to cultivate a deeper appreciation for my passions.</span>
+        </span>
+    </div>
+    <div class:list={baseDivClass}>
+        <div />
+        <span>
+            <span class:list={[baseTextClass, "text-left"]}>Though I'm still exploring, I find I'm most drawn towards </span>
+            <span class:list={[secondaryTextClass, "text-left"]}>web development, graphics, and physics simulations (I know, a little all over the place.)</span>
+        </span>
+        <WebPortfolioInfoCard />
+    </div>
+</div>

@@ -1,0 +1,10 @@
+.noise {
+  background:
+    linear-gradient(20deg, coral, transparent),
+    url(../components/GrainDecor/Grain.svg);
+    filter: contrast(170%) brightness(100%);
+}
+.gradientOverlay {
+    background: moccasin;
+    mix-blend-mode: multiply;
+}

@@ -1,10 +1,10 @@
 ---
-import HeaderLink from './HeaderLink.astro';
+import HeaderLink from './HeaderComponents/HeaderLink.astro';
 import ThemeChanger from './ThemeChanger.astro';
 ---
 
 <header class="flex justify-center">
-	<nav class="z-10 fixed text-lg dark:text-gray-200 backdrop-blur-xl rounded-bl-3xl rounded-br-3xl p-2 flex flex-row -translate-y-3 space-x-3">
+	<nav class="z-10 p-2 fixed flex flex-row space-x-3 -translate-y-3 text-lg dark:text-gray-200 backdrop-blur-xl rounded-bl-3xl rounded-br-3xl">
         <ThemeChanger />
 		<HeaderLink href="/">About</HeaderLink>
 		<!--HeaderLink href="/blog">Blog</HeaderLink-->

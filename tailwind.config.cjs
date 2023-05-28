@@ -6,8 +6,9 @@ module.exports = {
 		extend: {
             fontFamily: {
                 montserrat: ["Montserrat", 'sans-serif'], 
+                averia: ["Averia Serif Libre", 'cursive'],
                 h1: ["Krona One", 'sans-serif'],
-                averia: ["Averia Serif Libre", 'cursive']
+                ny: ["NY\ Irvin", 'sans-serif']
             },
             animation: {
                 blob: "blob 4s infinite",

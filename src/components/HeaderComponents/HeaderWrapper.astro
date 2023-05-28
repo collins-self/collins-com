@@ -1,0 +1,13 @@
+---
+import {bgColor} from '../../consts'
+import GrainDecor from '../GrainDecor/Gradient.astro' 
+---
+<div class:list={[bgColor, "relative max-w-full pb-10 sm:pb-36 overflow-hidden"]}>
+<!-- CONTENT -->
+    <GrainDecor />
+    <div class="overflow-hidden flex justify-center">
+        <div class="relative min-w-lg m-3">
+            <slot />
+       </div>
+   </div>
+</div>

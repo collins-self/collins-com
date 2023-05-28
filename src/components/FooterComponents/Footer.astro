@@ -1,0 +1,7 @@
+---
+import { bgColor } from '../../consts';
+const today = new Date();
+---
+<footer class:list={["text-gray-400 dark:text-gray-200 text-center pt-2 p-1", bgColor]}>
+	&copy; {today.getFullYear()} Collins Self. All rights reserved.
+</footer>

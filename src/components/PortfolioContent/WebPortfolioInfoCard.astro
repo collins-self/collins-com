@@ -1,0 +1,12 @@
+---
+import {bgColor} from '../../consts'
+const imgClass = 'p-3 hover:rounded-xl hover:border-2 hover:border-dashed hover:border-slate-600 dark:hover:border-slate-200';
+const bgCardColors = 'bg-gray-100 dark:bg-slate-700';
+---
+<div class:list={[bgColor, "dark:text-gray-200 p-8 px-8 min-w-max space-4"]}>
+    <div class:list={[bgCardColors, "py-4 px-8 min-w-max rounded-3xl transition-all"]}>
+        <img src="/header.svg" class:list={[imgClass, "m-auto block hover:translate-x-9 hover:-translate-y-5 transition-all delay-100"]}>
+        <img src="/search.svg" class:list={[imgClass, "hover:translate-x-7 transition-all delay-100"]}>
+        <img src="/body.svg" class:list={[imgClass, "hover:-translate-x-9 hover:translate-y-2 transition-all delay-100"]}>
+    </div>
+</div>

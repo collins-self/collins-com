@@ -1,6 +1,4 @@
-<a> my passions </a>
 blog button 
     (and blog site)
-fixed card size
 
     understna dark mode implimentation and hopefully be able to load components based on dark mode

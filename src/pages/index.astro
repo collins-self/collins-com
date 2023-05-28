@@ -1,35 +1,27 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import MainWrapper from '../components/MainWrapper.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import PortfolioContent from '../components/PortfolioContent.astro';
+import Header from '../components/HeaderComponents/Header.astro';
+import BaseHead from '../components/HeaderComponents/BaseHead.astro';
+import HeaderWrapper from '../components/HeaderComponents/HeaderWrapper.astro';
+import NavigationMenu from '../components/NavigationMenu.astro';
+import Footer from '../components/FooterComponents/Footer.astro';
+import PortfolioContent from '../components/PortfolioContent/PortfolioContent.astro';
+import ContactLinks from '../components/FooterComponents/ContactLinks.astro';
+import GrainDecor from '../components/GrainDecor/Gradient.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, bgColor } from '../consts';
 ---
 
 <!DOCTYPE html>
 <html lang="en" >
-<head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-</head>
-<body class="min-w-min bg-green-100 dark:bg-slate-600">
-    <MainWrapper>
-        <Header slot="header" title={SITE_TITLE} />
-        <h1 slot="top" class="font-h1 sm:text-9xl text-7xl text-center text-emerald-900 max-w-xl dark:text-gray-200 pt-20 ">Hi, I'm Collins</h1>
-        <h2 slot="top" class="font-montserrat font-semibold sm:text-5xl text-3xl text-center text-emerald-700 dark:text-gray-200">I'm a Developer.</h2>
-    </MainWrapper>
-    <PortfolioContent />
-    <div class="text-center bg-green-100 dark:bg-slate-600 dark:text-gray-200">
-        <span class="font-averia text-emerald-700 dark:text-gray-200 text-2xl">
-            <a href="/Resume.pdf" download>Click me for a resume!<a/>
-        </span>
-        <span class="font-montserrat text-xl">And click here to contact me:</span>
-        <span class="font-averia text-emerald-700 dark:text-gray-200 text-xl">
-            <a href="mailto:collinsself03@gmail.com"> collinsself03@gmail.com</a>
-        </span>
-    </div>
-    <div class="pt-20 bg-green-100 dark:bg-slate-600 dark:text-gray-200">
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body class:list={["min-w-min", bgColor]}>
+        <HeaderWrapper>
+            <NavigationMenu title={SITE_TITLE} />
+            <Header />
+        </HeaderWrapper>
+        <PortfolioContent />
+        <ContactLinks />
         <Footer />
-    </div>
-</body>
+    </body>
 </html>

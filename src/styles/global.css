@@ -10,6 +10,11 @@
 
 @tailwind utilities;
 
+@font-face {
+  font-family: "NY Irvin";
+  src: url("../../public/ny-fonts/NY\ Irvin.ttf");
+}
+
 @layer utilities {
     .animation-delay-2000 {
         animation-delay: 2s;
