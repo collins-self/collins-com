@@ -3,11 +3,11 @@ import PortfolioInfoCard from './PortfolioInfoCard.astro'
 import DevTools from '../../../public/devtools'
 import WebPortfolioInfoCard from './WebPortfolioInfoCard.astro'
 import ACounter from '../ACounter/ACounter.astro'
-import { bgColor } from '../../consts'
+import { bgColor, textColor } from '../../consts'
 
-const baseDivClass = 'flex sm:flex-row flex-col items-center space-x-6 max-w-3xl bg-gray-50 dark:bg-slate-600 py-8'
-const baseTextClass = 'text-2xl max-w-xl font-averia text-gray-800 dark:text-white'
-const secondaryTextClass = 'text-lg text-center max-w-xl font-montserrat text-gray-800 dark:text-white'
+const baseDivClass = 'flex sm:flex-row flex-col items-center space-x-6 max-w-3xl py-8' + bgColor;
+const baseTextClass = 'text-2xl max-w-xl font-averia ' + textColor;
+const secondaryTextClass = 'text-lg text-center max-w-xl font-montserrat ' + textColor;
 ---
 <div class:list={["px-2 flex flex-col items-center justify-center", bgColor]}>
     <div class:list={baseDivClass}>

@@ -4,11 +4,16 @@ module.exports = {
     darkMode: 'class',
 	theme: {
 		extend: {
+            colors: {
+                "engineering-orange": "#B80C09",
+                "sandy-brown": "#FF9B42",
+            },
             fontFamily: {
                 montserrat: ["Montserrat", 'sans-serif'], 
                 averia: ["Averia Serif Libre", 'cursive'],
                 h1: ["Krona One", 'sans-serif'],
-                ny: ["NY\ Irvin", 'sans-serif']
+                ny: ["NY\ Irvin", 'sans-serif'],
+                philosopher: ['Philosopher', 'sans-serif'],
             },
             animation: {
                 blob: "blob 4s infinite",
