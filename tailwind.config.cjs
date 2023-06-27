@@ -5,8 +5,10 @@ module.exports = {
 	theme: {
 		extend: {
             colors: {
-                "engineering-orange": "#B80C09",
-                "sandy-brown": "#FF9B42",
+                "rowdy-red": "#FF5E5B",
+                "bubly-blue": "#2E86AB",
+                "space-blue": "#2C2C54",
+                "floral-white": "#FFF0F0",
             },
             fontFamily: {
                 montserrat: ["Montserrat", 'sans-serif'], 
